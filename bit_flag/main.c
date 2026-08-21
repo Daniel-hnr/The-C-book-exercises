@@ -17,6 +17,7 @@ int f(int x,t_flag flags)
 	if(flags & FLAG_B)
 	{
 		x -= 1;
+		flags &= ~FLAG_B;
 	}
 	return x;
 }
